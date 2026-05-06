@@ -15,7 +15,7 @@ export default {
 
       const id = Date.now().toString();
 
-      await env.KV.put(id, JSON.stringify(data));
+      await env.DB.put(id, JSON.stringify(data));
 
       console.log("Datos:", data);
 
